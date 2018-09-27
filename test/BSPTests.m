@@ -15,7 +15,7 @@ classdef BSPTests < matlab.unittest.TestCase
         %             addpath(genpath('../hdl_wa_bsp'));
         %         end
         function installBSP(obj)
-            system('wget http://tfcollins.me/data/AnalogDevicesBSP_v18.1.mltbx');
+            system('wget https://github.com/analogdevicesinc/MathWorks_tools/releases/download/v18.1.0/AnalogDevicesBSP_v18.1.0.mltbx');
             tbname = 'AnalogDevicesBSP_v18.1.mltbx';
             obj.installed = matlab.addons.toolbox.installToolbox(tbname);
         end
